@@ -1,7 +1,17 @@
+<script setup lang="ts">
+useHead({
+  title: 'Frontend News Thailand',
+  meta: [
+    { name: 'description', content: 'Frontend news that everyone loves.' },
+  ],
+  bodyAttrs: {
+    class: 'bg-[#1e1e1e] tracking-wide md:text-xl',
+  },
+})
+</script>
+
 <template>
-  <div>
-    <div class="text-xl">
-      Frontend News Thailand
-    </div>
-  </div>
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>

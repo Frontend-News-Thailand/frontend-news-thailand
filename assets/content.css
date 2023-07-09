@@ -1,0 +1,7 @@
+.nuxt-content h1 {
+  @apply text-center text-2xl pb-4;
+}
+
+.nuxt-content img {
+  @apply mx-auto;
+}
