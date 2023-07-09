@@ -1,5 +1,5 @@
 <template>
-  <div class="text-white leading-[1.6]" :style="{ fontFamily: `'IBM Plex Sans Thai Looped', sans-serif` }">
+  <div class="text-white leading-[1.6] font-light" :style="{ fontFamily: `'Sarabun', serif` }">
     <div class="px-4 py-2">
       <AppLogo class="w-[7em] md:w-[10em] h-auto mx-auto" />
     </div>

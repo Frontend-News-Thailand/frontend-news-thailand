@@ -1,5 +1,9 @@
+.nuxt-content  {
+  @apply leading-[1.6];
+}
+
 .nuxt-content h1 {
-  @apply text-center text-2xl pb-4;
+  @apply text-center text-2xl pb-4 font-normal;
 }
 
 .nuxt-content img {

@@ -5,7 +5,7 @@ useHead({
     { name: 'description', content: 'Frontend news that everyone loves.' },
   ],
   bodyAttrs: {
-    class: 'bg-[#1e1e1e] tracking-wide md:text-xl',
+    class: 'bg-[#1e1e1e] tracking-wider md:text-xl',
   },
 })
 </script>

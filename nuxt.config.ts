@@ -11,7 +11,7 @@ export default defineNuxtConfig({
   content: {},
   googleFonts: {
     families: {
-      'IBM Plex Sans Thai Looped': [400, 700],
+      Sarabun: [300, 400],
     },
     display: 'swap',
   },
