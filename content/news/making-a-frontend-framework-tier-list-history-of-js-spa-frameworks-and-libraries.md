@@ -7,3 +7,6 @@
 คลิปนี้จะนำ Frontend Framework มาจัดอันดับตามการใช้งานตั้งยุคอดีตกาลอย่าง Knockout.js, Backbone.js ยันจนถึง 3 Framework เรือธงที่เราใช้อยู่อย่าง React, Vue, Angular อีกทั้งยังมีน้องใหม่อย่าง Solid
 
 โดยนอกจากเทียบ Feature แล้ว ยังมองถึงเรื่อง Documents และ Community ต่อ Framework นั้นด้วย ซึ่งมีผลมาก ๆ กับการจัด Tier
+
+## Refs
+- https://www.youtube.com/watch?v=O0o7bvnmc_Y&t=782s
