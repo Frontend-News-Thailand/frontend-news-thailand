@@ -15,7 +15,7 @@ function getAuthor(username: string) {
     <ContentDoc v-slot="{ doc }">
       <ContentRenderer :value="doc" class="flex flex-col gap-6 nuxt-content" />
 
-      <hr class="border-white border-opacity-40 mt-6">
+      <hr class="border-light-base-text dark:border-dark-base-text border-opacity-40 mt-6">
 
       <div class="flex justify-between text-sm md:text-base">
         <span class="text-white text-opacity-40">

@@ -1,15 +1,13 @@
-@tailwind utilities;
-
 .nuxt-content  {
   @apply leading-[1.6];
 }
 
 .nuxt-content h1 {
-  @apply text-center text-2xl pb-4 font-normal;
+  @apply text-center text-2xl pb-4 font-medium;
 }
 
 .nuxt-content h2 {
-  @apply text-xl font-normal;
+  @apply text-xl font-medium;
 }
 
 .nuxt-content img {
@@ -22,28 +20,4 @@
 
 .nuxt-content > ul a {
   @apply hover:text-[#41B883] underline decoration-[#41B883] transition-colors;
-}
-
-@layer utilities {
-  ::-webkit-scrollbar {
-    width: 4px;
-    height: 0px;
-  }
-
-  ::-webkit-scrollbar-track {
-    background: none;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background-color: #41B883;
-    border-radius: 4px;
-  }
-
-  ::-webkit-scrollbar-button {
-    background-color: transparent;
-  }
-
-  ::-webkit-scrollbar-corner {
-    background-color: transparent;
-  }
 }
