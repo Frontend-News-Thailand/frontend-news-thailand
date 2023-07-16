@@ -33,8 +33,11 @@ export default defineNuxtConfig({
     },
     display: 'swap',
   },
-  generate: {
-    routes,
+  ignore: ['pages/generate-og.vue'],
+  nitro: {
+    prerender: {
+      routes,
+    },
   },
   colorMode: {
     preference: 'system',

@@ -2,6 +2,8 @@
 createdDate: 29/08/2021
 tags: library,framework
 username: runyasak
+head:
+  image: /news/making-a-frontend-framework-tier-list-history-of-js-spa-frameworks-and-libraries/og.jpeg
 ---
 
 ![image alt text](/news/making-a-frontend-framework-tier-list-history-of-js-spa-frameworks-and-libraries/image-1.jpeg)
