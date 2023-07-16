@@ -23,7 +23,11 @@ function getAuthor(username: string) {
         </span>
 
         <div class="flex gap-4">
-          <span v-for="(tag, index) of splitDocTags(doc.tags)" :key="tag + index" class="flex hover:underline decoration-[#41B883] cursor-pointer">
+          <span
+            v-for="(tag, index) of splitDocTags(doc.tags)"
+            :key="tag + index"
+            class="flex hover:underline decoration-[#41B883] cursor-pointer"
+          >
             <span class="text-[#41B883]">#</span>
             <span>{{ tag }}</span>
           </span>
@@ -32,7 +36,12 @@ function getAuthor(username: string) {
 
       <div class="flex items-center gap-4 md:gap-8 pt-4">
         <div class="flex flex-col gap-1 items-center">
-          <img width="100" class="rounded-full w-20 md:w-[6.25rem]" :src="getAuthor(doc.username)?.avatar" alt="author-image">
+          <img
+            width="100"
+            class="rounded-full w-20 md:w-[6.25rem]"
+            :src="getAuthor(doc.username)?.avatar"
+            alt="author-image"
+          >
           <span>Author</span>
         </div>
 
