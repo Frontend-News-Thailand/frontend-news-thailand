@@ -12,12 +12,16 @@ function toggleColorMode() {
       <AppLogo class="w-[7em] md:w-[10em] h-auto mx-auto" />
 
       <ClientOnly>
-        <button class="flex h-8 absolute right-4 top-1/2 transform -translate-y-1/2 hover:bg-white transition-colors rounded-full hover:bg-opacity-30 p-1" tag="button" @click="toggleColorMode">
+        <button
+          class="flex h-8 absolute right-4 md:right-12 top-1/2 transform -translate-y-1/2 dark:hover:bg-white hover:bg-dark-base-bg transition-colors rounded-full hover:bg-opacity-30 dark:hover:bg-opacity-30 p-1"
+          tag="button"
+          @click="toggleColorMode"
+        >
           <template v-if="$colorMode.value === 'dark'">
             <Icon name="entypo:light-up" size="24px" />
           </template>
           <template v-else>
-            <Icon name="circum:dark" size="24px" />
+            <Icon name="iconamoon:mode-dark-bold" size="24px" />
           </template>
         </button>
       </ClientOnly>
