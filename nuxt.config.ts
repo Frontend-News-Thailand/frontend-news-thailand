@@ -6,7 +6,14 @@ const routes = globSync('./content/**/*.md')
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: false },
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/content', '@nuxtjs/google-fonts', '@nuxtjs/color-mode', 'nuxt-icon'],
+  modules: [
+    '@nuxtjs/tailwindcss',
+    '@nuxt/content',
+    '@nuxtjs/google-fonts',
+    '@nuxtjs/color-mode',
+    'nuxt-icon',
+    '@nuxt/image',
+  ],
   css: ['@/assets/content.css', '@/assets/global.css'],
   components: true,
   tailwindcss: {
@@ -16,6 +23,7 @@ export default defineNuxtConfig({
       theme: {
         extend: {
           colors: {
+            'primary': '#41B883',
             'light-base-bg': 'white',
             'light-base-text': '#1e1e1e',
             'dark-base-bg': '#1e1e1e',

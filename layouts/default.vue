@@ -27,7 +27,7 @@ function toggleColorMode() {
       </ClientOnly>
     </div>
 
-    <div class="container mx-auto px-8 pb-6 max-w-3xl">
+    <div class="px-8 pb-6">
       <slot />
     </div>
   </div>

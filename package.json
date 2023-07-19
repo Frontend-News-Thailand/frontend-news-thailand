@@ -8,16 +8,14 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
-  "simple-git-hooks": {
-    "pre-commit": "pnpm lint-staged"
-  },
-  "lint-staged": {
-    "*": "eslint --fix"
+  "dependencies": {
+    "glob": "^10.3.3"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.39.7",
     "@nuxt/content": "^2.7.0",
     "@nuxt/devtools": "latest",
+    "@nuxt/image": "1.0.0-rc.1",
     "@nuxtjs/color-mode": "^3.3.0",
     "@nuxtjs/google-fonts": "^3.0.1",
     "@nuxtjs/tailwindcss": "^6.8.0",
@@ -29,7 +27,10 @@
     "nuxt-icon": "^0.4.2",
     "simple-git-hooks": "^2.8.1"
   },
-  "dependencies": {
-    "glob": "^10.3.3"
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
   }
 }

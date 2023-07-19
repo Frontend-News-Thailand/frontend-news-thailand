@@ -6,6 +6,12 @@ export default defineNitroPlugin((nitroApp) => {
       visit(file.head.image.src, (n) => {
         file.head.image.src = `${process.env.BASE_URL}/${n}`
       })
+      visit(file.body, (n: any) => n.tag === 'img', (node) => {
+        file.coverImage = node.props.src
+      })
+
+      const description = file.body.children[2].children[0].value
+      file.description = description
     }
   })
 })

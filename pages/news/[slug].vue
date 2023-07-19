@@ -11,7 +11,7 @@ function getAuthor(username: string) {
 </script>
 
 <template>
-  <div class="flex flex-col gap-6 pt-6">
+  <div class="container mx-auto max-w-3xl flex flex-col gap-6 pt-6">
     <ContentDoc v-slot="{ doc }">
       <ContentRenderer :value="doc" class="flex flex-col gap-6 nuxt-content" />
 
@@ -26,9 +26,9 @@ function getAuthor(username: string) {
           <span
             v-for="(tag, index) of splitDocTags(doc.tags)"
             :key="tag + index"
-            class="flex hover:underline decoration-[#41B883] cursor-pointer"
+            class="flex hover:underline decoration-primary cursor-pointer"
           >
-            <span class="text-[#41B883]">#</span>
+            <span class="text-primary">#</span>
             <span>{{ tag }}</span>
           </span>
         </div>

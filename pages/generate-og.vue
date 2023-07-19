@@ -40,7 +40,9 @@ function downloadImage(imageSrc: string) {
 
 <template>
   <div class="flex flex-col items-center gap-4">
-    <BaseTitle>Generate OG</BaseTitle>
+    <BaseTitle class="text-center">
+      Generate OG
+    </BaseTitle>
     <template v-if="previewImage">
       <img :src="previewImage" alt="preview-image">
       <button @click="downloadImage(previewImage)">
