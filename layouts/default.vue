@@ -8,8 +8,10 @@ function toggleColorMode() {
 
 <template>
   <div class="text-light-base-text dark:text-dark-base-text leading-[1.6]" :style="{ fontFamily: `'Sarabun', serif` }">
-    <div class="px-4 py-2 relative">
-      <AppLogo class="w-[7em] md:w-[10em] h-auto mx-auto" />
+    <div class="px-4 py-2 relative flex justify-center">
+      <NuxtLink to="/" class="w-[7em] md:w-[10em] inline-block">
+        <AppLogo class="w-[7em] md:w-[10em] h-auto" />
+      </NuxtLink>
 
       <ClientOnly>
         <button
