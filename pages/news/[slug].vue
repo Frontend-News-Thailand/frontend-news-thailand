@@ -18,9 +18,7 @@ function getAuthor(username: string) {
       <hr class="border-light-base-text dark:border-dark-base-text border-opacity-40 mt-6">
 
       <div class="flex justify-between text-sm md:text-base">
-        <span class="text-light-base-text dark:text-white text-opacity-40 dark:text-opacity-40">
-          {{ doc.createdDate }}
-        </span>
+        <BaseSecondaryText>{{ doc.createdDate }}</BaseSecondaryText>
 
         <div class="flex gap-4">
           <span
