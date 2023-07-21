@@ -11,7 +11,10 @@ onMounted(() => {
   const image1 = new Image()
 
   image1.onload = function () {
-    ctx?.drawImage(image1, 0, 0, 1200, 627)
+    const ratio = image1.naturalWidth / image1.naturalHeight
+    const width = canvas.width
+    const height = width / ratio
+    ctx?.drawImage(image1, 0, 0, width, height)
 
     const image2 = new Image()
 
