@@ -10,6 +10,9 @@ export default defineNitroPlugin((nitroApp) => {
         file.coverImage = node.props.src
       })
 
+      const title = file.body.children[1].children[0].value
+      file.title = title
+
       const description = file.body.children[2].children[0].value
       file.description = description
     }

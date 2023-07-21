@@ -9,6 +9,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "dayjs": "^1.11.9",
     "glob": "^10.3.3"
   },
   "devDependencies": {

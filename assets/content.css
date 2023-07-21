@@ -21,3 +21,7 @@
 .nuxt-content > ul a {
   @apply hover:text-[#41B883] underline decoration-[#41B883] transition-colors;
 }
+
+.nuxt-content code {
+  @apply bg-[#242b27] px-1 rounded text-primary;
+}
