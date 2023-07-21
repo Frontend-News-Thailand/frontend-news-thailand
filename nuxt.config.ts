@@ -3,6 +3,8 @@ import { globSync } from 'glob'
 const routes = globSync('./content/**/*.md')
   .map(path => path.slice(7, -3))
 
+const isGenerateMode = process.argv.includes('generate')
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: false },
@@ -41,7 +43,7 @@ export default defineNuxtConfig({
     },
     display: 'swap',
   },
-  ignore: ['pages/generate-og.vue'],
+  ignore: isGenerateMode ? ['pages/generate-og.vue', 'template/*'] : ['template/*'],
   nitro: {
     prerender: {
       routes,
