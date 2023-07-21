@@ -46,6 +46,7 @@ export default defineNuxtConfig({
     families: {
       Sarabun: [400, 500],
     },
+    download: true,
     display: 'swap',
   },
   ignore: isGenerateMode ? ['pages/generate-og.vue', 'template/*'] : ['template/*'],
