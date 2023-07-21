@@ -18,6 +18,11 @@ export default defineNuxtConfig({
   ],
   css: ['@/assets/content.css', '@/assets/global.css'],
   components: true,
+  runtimeConfig: {
+    public: {
+      baseUrl: process.env.BASE_URL || '',
+    },
+  },
   tailwindcss: {
     exposeConfig: true,
     config: {
