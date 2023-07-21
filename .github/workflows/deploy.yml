@@ -17,6 +17,8 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    env:
+      BASE_URL: https://frontend-news-thailand.github.io/frontend-news-thailand
     permissions:
       contents: write
     steps:
@@ -38,6 +40,8 @@ jobs:
 
       - name: Generate static files
         run: pnpm run generate
+        env:
+          BASE_URL: ${{ env.BASE_URL }}
 
       - name: Deploy to GitHub Pages
         if: success()
