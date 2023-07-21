@@ -18,7 +18,7 @@
   @apply list-disc pl-6;
 }
 
-.nuxt-content > ul a {
+.nuxt-content > :not(h2) a {
   @apply hover:text-[#41B883] underline decoration-[#41B883] transition-colors;
 }
 
