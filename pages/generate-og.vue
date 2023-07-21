@@ -1,7 +1,9 @@
 <script setup lang="ts">
 const previewImage = ref<string | null>(null)
 
-onMounted(() => {
+const imageMode = ref<'fit' | 'contain'>('fit')
+
+function drawImage() {
   const canvas = document.createElement('canvas')
   canvas.width = 1200
   canvas.height = 627
@@ -11,10 +13,15 @@ onMounted(() => {
   const image1 = new Image()
 
   image1.onload = function () {
-    const ratio = image1.naturalWidth / image1.naturalHeight
-    const width = canvas.width
-    const height = width / ratio
-    ctx?.drawImage(image1, 0, 0, width, height)
+    if (imageMode.value === 'fit') {
+      ctx?.drawImage(image1, 0, 0, 1200, 627)
+    }
+    else {
+      const ratio = image1.naturalWidth / image1.naturalHeight
+      const width = canvas.width
+      const height = width / ratio
+      ctx?.drawImage(image1, 0, 0, width, height)
+    }
 
     const image2 = new Image()
 
@@ -29,7 +36,7 @@ onMounted(() => {
   }
 
   image1.src = '/news/making-a-frontend-framework-tier-list-history-of-js-spa-frameworks-and-libraries/image-1.jpeg'
-})
+}
 
 function downloadImage(imageSrc: string) {
   const a = document.createElement('a')
@@ -39,6 +46,16 @@ function downloadImage(imageSrc: string) {
   a.click()
   document.body.removeChild(a)
 }
+
+function toggleImageMode() {
+  imageMode.value = imageMode.value === 'contain' ? 'fit' : 'contain'
+}
+
+onMounted(() => {
+  drawImage()
+})
+
+watch(imageMode, () => drawImage())
 </script>
 
 <template>
@@ -46,11 +63,14 @@ function downloadImage(imageSrc: string) {
     <BaseTitle class="text-center">
       Generate OG
     </BaseTitle>
-    <template v-if="previewImage">
+    <div v-if="previewImage" class="flex flex-col gap-4">
       <img :src="previewImage" alt="preview-image">
       <button @click="downloadImage(previewImage)">
         Download Image
       </button>
-    </template>
+      <button @click="toggleImageMode">
+        Mode: {{ imageMode }}
+      </button>
+    </div>
   </div>
 </template>
