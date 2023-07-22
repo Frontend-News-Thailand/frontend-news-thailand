@@ -20,7 +20,7 @@ export default defineNuxtConfig({
   components: true,
   runtimeConfig: {
     public: {
-      baseUrl: process.env.BASE_URL || '',
+      baseUrl: process.env.URL || '',
     },
   },
   tailwindcss: {

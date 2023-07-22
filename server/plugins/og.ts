@@ -4,7 +4,7 @@ export default defineNitroPlugin((nitroApp) => {
   nitroApp.hooks.hook('content:file:afterParse', (file) => {
     if (file._id.endsWith('.md')) {
       visit(file.head.image.src, (n) => {
-        file.head.image.src = `${process.env.BASE_URL}/${n}`
+        file.head.image.src = `${process.env.URL}/${n}`
       })
       visit(file.body, (n: any) => n.tag === 'img', (node) => {
         file.coverImage = node.props.src
