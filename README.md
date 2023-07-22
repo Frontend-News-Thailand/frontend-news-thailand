@@ -1,1 +1,3 @@
-[![Header](https://github.com/Frontend-News-Thailand/frontend-news-thailand/blob/main/public/og-logo.png?raw=true "Header")](https://frontendnewsthailand.dev/)
+[![][banner-url]](https://frontendnewsthailand.dev)
+
+[banner-url]: https://github.com/Frontend-News-Thailand/frontend-news-thailand/blob/main/public/banner.jpg?raw=true
