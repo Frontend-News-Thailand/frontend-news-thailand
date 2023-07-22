@@ -15,6 +15,14 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     'nuxt-icon',
     '@nuxt/image',
+    ['nuxt-gtag',
+      {
+        id: process.env.GOOGLE_ANALYTICS_ID,
+        config: {
+          page_title: 'Frontend News Thailand',
+        },
+      },
+    ],
   ],
   css: ['@/assets/content.css', '@/assets/global.css'],
   components: true,
