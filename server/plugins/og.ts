@@ -1,11 +1,9 @@
 import { visit } from 'unist-util-visit'
 
 export default defineNitroPlugin((nitroApp) => {
+  // @ts-expect-error remove ts-expect-error when issie is resolved https://github.com/nuxt/content/issues/2177
   nitroApp.hooks.hook('content:file:afterParse', (file) => {
     if (file._id.endsWith('.md')) {
-      visit(file.head.image.src, (n) => {
-        file.head.image.src = `${process.env.URL}/${n}`
-      })
       visit(file.body, (n: any) => n.tag === 'img', (node) => {
         file.coverImage = node.props.src
       })
