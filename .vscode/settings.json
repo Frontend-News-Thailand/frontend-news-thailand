@@ -22,5 +22,6 @@
       "yaml"
     ]
   },
-  "tailwindCSS.experimental.configFile": ".nuxt/tailwind.config.d.ts"
+  "tailwindCSS.experimental.configFile": ".nuxt/tailwind.config.d.ts",
+  "typescript.tsdk": "node_modules/typescript/lib"
 }
