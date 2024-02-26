@@ -2,6 +2,10 @@
   @apply leading-[1.8];
 }
 
+.nuxt-content p {
+  @apply text-[1.125rem] ;
+}
+
 .nuxt-content h1 {
   @apply text-center text-3xl pb-4 font-bold;
 }
