@@ -23,6 +23,7 @@ function sortCreatedAtArticles(articles: any[]) {
         >
           <nuxt-img
             :src="article.coverImage"
+            class="rounded-xl cover-image--primary-shadow"
             width="640"
             height="480"
             fit="inside"

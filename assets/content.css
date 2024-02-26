@@ -14,6 +14,11 @@
   @apply mx-auto;
 }
 
+.nuxt-content img:first-child {
+  @apply rounded-xl;
+  box-shadow: 0px 0px 16px 0px rgba(66, 184, 131, 0.8);
+}
+
 .nuxt-content > ul {
   @apply list-disc pl-6;
 }
