@@ -1,13 +1,13 @@
 .nuxt-content  {
-  @apply leading-[1.6];
+  @apply leading-[1.8];
 }
 
 .nuxt-content h1 {
-  @apply text-center text-2xl pb-4 font-medium;
+  @apply text-center text-3xl pb-4 font-bold;
 }
 
 .nuxt-content h2 {
-  @apply text-xl font-medium;
+  @apply text-2xl font-bold;
 }
 
 .nuxt-content img {
@@ -24,7 +24,7 @@
 }
 
 .nuxt-content > :not(h2) a {
-  @apply hover:text-[#41B883] underline decoration-[#41B883] transition-colors;
+  @apply hover:text-[#41B883] underline decoration-[#41B883] transition-colors break-all;
 }
 
 .nuxt-content code {
