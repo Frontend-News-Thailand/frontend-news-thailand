@@ -2,13 +2,8 @@
   "prettier.enable": false,
   "editor.formatOnSave": false,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
-    "source.organizeImports": false,
-
-    // The following is optional.
-    // It's better to put under project setting `.vscode/settings.json`
-    // to avoid conflicts with working with different eslint configs
-    // that does not support all formats.
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "never",
     "eslint.validate": [
       "javascript",
       "javascriptreact",
@@ -22,6 +17,5 @@
       "yaml"
     ]
   },
-  "tailwindCSS.experimental.configFile": ".nuxt/tailwind.config.d.ts",
   "typescript.tsdk": "node_modules/typescript/lib"
 }
