@@ -4,7 +4,7 @@ tags: react
 username: runyasak
 head:
   image:
-    src: /news/react-end-of-2024/og.jpeg
+    src: /news/react-end-of-2024/og.jpg
     type: image/jpeg
     width: 1200
     height: 617
