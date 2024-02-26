@@ -34,8 +34,10 @@ function sortCreatedAtArticles(articles: any[]) {
             <BaseTitle class="group-hover:text-primary transition-colors duration-300 ease-in-out">
               {{ article.title }}
             </BaseTitle>
-            <BaseSecondaryText>{{ article.createdDate }}</BaseSecondaryText>
-            <BaseTags class="justify-end" :tags="article.tags" />
+            <div class="flex">
+              <BaseSecondaryText>{{ article.createdDate }}</BaseSecondaryText>
+              <BaseTags class="ml-auto justify-end" :tags="article.tags" />
+            </div>
           </div>
         </NuxtLink>
       </ContentList>
