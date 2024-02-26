@@ -52,7 +52,7 @@ export default defineNuxtConfig({
   content: {},
   googleFonts: {
     families: {
-      Sarabun: [400, 500, 700],
+      Sarabun: [400, 500],
     },
     download: true,
     display: 'swap',
