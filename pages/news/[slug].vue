@@ -13,7 +13,7 @@ function getAuthor(username: string) {
 <template>
   <div class="container mx-auto max-w-3xl flex flex-col gap-6 pt-6">
     <ContentDoc v-slot="{ doc }">
-      <ContentRenderer :value="doc" class="flex flex-col gap-6 nuxt-content" />
+      <ContentRenderer :value="doc" class="flex flex-col nuxt-content" />
 
       <hr class="border-light-base-text dark:border-dark-base-text border-opacity-40 mt-6">
 

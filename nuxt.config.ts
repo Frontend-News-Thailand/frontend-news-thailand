@@ -57,7 +57,8 @@ export default defineNuxtConfig({
   },
   googleFonts: {
     families: {
-      Sarabun: [400, 500],
+      'Sarabun': [300, 400, 500],
+      'Noto+Sans+Thai': [500],
     },
     download: true,
     display: 'swap',

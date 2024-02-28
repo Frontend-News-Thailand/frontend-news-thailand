@@ -28,6 +28,14 @@ body, body [class^="dark:"] {
   }
 }
 
+:root {
+  font-weight: 300;
+}
+
+h1, h2 {
+  font-family: "Noto Sans Thai", sans-serif;
+}
+
 .cover-image--primary-shadow {
   box-shadow: 0px 0px 12px 0px rgba(66, 184, 131, 0.8);
 }

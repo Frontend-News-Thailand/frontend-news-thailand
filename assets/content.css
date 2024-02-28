@@ -1,17 +1,25 @@
 .nuxt-content  {
-  @apply leading-[1.8];
+  @apply text-[1.125rem] font-light;
 }
 
 .nuxt-content p {
-  @apply text-[1.125rem] ;
+  @apply pb-6;
 }
 
 .nuxt-content h1 {
-  @apply text-center text-3xl pb-4 font-bold;
+  @apply text-center text-[2rem] font-medium;
 }
 
 .nuxt-content h2 {
-  @apply text-2xl font-bold;
+  @apply text-2xl font-medium;
+}
+
+.nuxt-content h1, .nuxt-content h2 {
+  @apply py-6;
+}
+
+.nuxt-content hr {
+  @apply my-6;
 }
 
 .nuxt-content img {
