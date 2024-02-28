@@ -34,7 +34,7 @@ function sortCreatedAtArticles(articles: any[]) {
             <BaseTitle class="group-hover:text-primary transition-colors duration-300 ease-in-out">
               {{ article.title }}
             </BaseTitle>
-            <div class="flex">
+            <div class="flex gap-4">
               <BaseSecondaryText>{{ article.createdDate }}</BaseSecondaryText>
               <BaseTags class="ml-auto justify-end" :tags="article.tags" />
             </div>

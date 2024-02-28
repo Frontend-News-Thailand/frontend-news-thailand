@@ -7,7 +7,7 @@ function splitDocTags(tags: string) {
 </script>
 
 <template>
-  <div class="flex gap-4">
+  <div class="flex gap-x-4 gap-y-2 flex-wrap">
     <span
       v-for="(tag, index) of splitDocTags(props.tags)"
       :key="tag + index"
