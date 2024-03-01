@@ -11,7 +11,7 @@ function getAuthor(username: string) {
 </script>
 
 <template>
-  <div class="container mx-auto max-w-3xl flex flex-col gap-6 pt-6">
+  <div class="container mx-auto max-w-3xl flex flex-col gap-6 pt-10">
     <ContentDoc v-slot="{ doc }">
       <ContentRenderer :value="doc" class="flex flex-col nuxt-content" />
 
