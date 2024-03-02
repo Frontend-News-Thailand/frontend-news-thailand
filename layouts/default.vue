@@ -13,20 +13,30 @@ function toggleColorMode() {
         <AppLogo class="w-[7em] md:w-[10em] h-auto" />
       </NuxtLink>
 
-      <ClientOnly>
-        <button
-          class="flex h-8 absolute right-4 md:right-12 top-1/2 transform -translate-y-1/2 dark:hover:bg-white hover:bg-dark-base-bg transition-colors rounded-full hover:bg-opacity-30 dark:hover:bg-opacity-30 p-1"
-          tag="button"
-          @click="toggleColorMode"
+      <div class="flex gap-4 absolute right-4 md:right-12 top-1/2 transform -translate-y-1/2">
+        <NuxtLink
+          to="https://github.com/Frontend-News-Thailand/frontend-news-thailand"
+          target="_blank"
+          class="flex h-8 dark:hover:bg-white hover:bg-dark-base-bg transition-colors rounded-full hover:bg-opacity-30 dark:hover:bg-opacity-30 p-1"
         >
-          <template v-if="$colorMode.value === 'dark'">
-            <Icon name="entypo:light-up" size="24px" />
-          </template>
-          <template v-else>
-            <Icon name="iconamoon:mode-dark-bold" size="24px" />
-          </template>
-        </button>
-      </ClientOnly>
+          <Icon name="mdi:github" size="24px" />
+        </NuxtLink>
+
+        <ClientOnly>
+          <button
+            class="flex h-8 dark:hover:bg-white hover:bg-dark-base-bg transition-colors rounded-full hover:bg-opacity-30 dark:hover:bg-opacity-30 p-1"
+            type="button"
+            @click="toggleColorMode"
+          >
+            <template v-if="$colorMode.value === 'dark'">
+              <Icon name="entypo:light-up" size="24px" />
+            </template>
+            <template v-else>
+              <Icon name="iconamoon:mode-dark-bold" size="24px" />
+            </template>
+          </button>
+        </ClientOnly>
+      </div>
     </div>
 
     <div class="px-8 pb-6">
