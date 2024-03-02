@@ -14,7 +14,7 @@ function toggleColorMode() {
 <template>
   <div class="text-light-base-text dark:text-dark-base-text leading-[1.6]" :style="{ fontFamily: `'Sarabun', serif` }">
     <div class="px-4 py-2 relative flex justify-center">
-      <NuxtLink to="/" class="w-[7em] md:w-[10em] inline-block">
+      <NuxtLink to="/" class="w-[7em] md:w-[10em] inline-block" aria-current-value="Go to Home">
         <AppLogo class="w-[7em] md:w-[10em] h-auto" />
       </NuxtLink>
 
@@ -23,6 +23,7 @@ function toggleColorMode() {
           to="https://github.com/Frontend-News-Thailand/frontend-news-thailand"
           target="_blank"
           class="flex h-8 dark:hover:bg-white hover:bg-dark-base-bg transition-colors rounded-full hover:bg-opacity-30 dark:hover:bg-opacity-30 p-1"
+          aria-current-value="Go to Github"
         >
           <Icon name="mdi:github" size="24px" />
         </NuxtLink>
