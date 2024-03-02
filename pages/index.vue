@@ -29,6 +29,7 @@ function sortCreatedAtArticles(articles: any[]) {
             fit="inside"
             :fetchpriority="index === 0 ? 'high' : 'low'"
             sizes="sm:100vw md:464px"
+            :alt="article.title"
           />
           <div class="flex flex-col gap-4">
             <BaseTitle class="group-hover:text-primary transition-colors duration-300 ease-in-out">
