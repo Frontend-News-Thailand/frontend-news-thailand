@@ -3,6 +3,9 @@ const config = useRuntimeConfig()
 
 useHead({
   title: 'Frontend News Thailand',
+  htmlAttrs: {
+    lang: 'th',
+  },
   meta: [
     { name: 'description', content: 'Frontend news that everyone loves.' },
     { property: 'og:title', content: 'Frontend News Thailand' },
