@@ -10,7 +10,7 @@ head:
     height: 617
 ---
 
-![image alt text](/news/siriwat-kunaporn-core-team-mui/image-1.jpg)
+![Core Team คนใหม่ของ Material-UI](/news/siriwat-kunaporn-core-team-mui/image-1.jpg)
 
 # Core Team คนใหม่ของ Material-UI
 

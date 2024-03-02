@@ -10,7 +10,7 @@ head:
     height: 617
 ---
 
-![image alt text](/news/making-a-frontend-framework-tier-list-history-of-js-spa-frameworks-and-libraries/image-1.jpeg)
+![Making a Frontend Framework Tier List: History of JS SPA Frameworks and Libraries - Code Garden](/news/making-a-frontend-framework-tier-list-history-of-js-spa-frameworks-and-libraries/image-1.jpeg)
 
 # Making a Frontend Framework Tier List: History of JS SPA Frameworks and Libraries - Code Garden
 

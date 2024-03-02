@@ -10,7 +10,7 @@ head:
     height: 617
 ---
 
-![image alt text](/news/react-end-of-2024/image-1.jpg){width="720" height="325" sizes="100vw md:720" preload fetchpriority="high"}
+![สรุปสิ่งที่เราจะได้เห็น React ในปี 2024](/news/react-end-of-2024/image-1.jpg){width="720" height="325" sizes="100vw md:720" preload fetchpriority="high"}
 
 # สรุปสิ่งที่เราจะได้เห็น React ในปี 2024
 

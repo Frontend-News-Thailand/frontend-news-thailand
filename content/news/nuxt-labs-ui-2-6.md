@@ -10,7 +10,7 @@ head:
     height: 617
 ---
 
-![image alt text](/news/nuxt-labs-ui-2-6/image-1.jpg)
+![เปิดตัว NuxtLabs UI 2.6 - Accordion มาแล้ว](/news/nuxt-labs-ui-2-6/image-1.jpg)
 
 # เปิดตัว NuxtLabs UI 2.6 - Accordion มาแล้ว
 

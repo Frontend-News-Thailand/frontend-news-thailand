@@ -10,7 +10,7 @@ head:
     height: 617
 ---
 
-![image alt text](/news/tailwind-3-0-0-alpha-2/image-1.jpeg)
+![Tailwind CSS: Release v3.0.0-alpha.2](/news/tailwind-3-0-0-alpha-2/image-1.jpeg)
 
 # Tailwind CSS: Release v3.0.0-alpha.2
 
@@ -24,7 +24,6 @@ head:
 - เพิ่ม `text-decoration-color`
 
 และยังมี Feature ต่าง ๆ อีกมากมาย ใครที่อยากอ่านรายละเอียดเพิ่มเติม สามารถดูได้จากลิงก์ด้านล่างนี้ได้เลยครับ
-
 
 ## Refs
 - https://github.com/tailwindlabs/tailwindcss/releases/tag/v3.0.0-alpha.2
