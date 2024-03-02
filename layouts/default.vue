@@ -1,6 +1,11 @@
 <script setup lang="ts">
 const colorMode = useColorMode()
 
+const switchThemeAriaLabel = computed(() => {
+  const toNewTheme = colorMode.value === 'dark' ? 'light' : 'dark'
+  return `Switch to ${toNewTheme} theme`
+})
+
 function toggleColorMode() {
   colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark'
 }
@@ -26,6 +31,7 @@ function toggleColorMode() {
           <button
             class="flex h-8 dark:hover:bg-white hover:bg-dark-base-bg transition-colors rounded-full hover:bg-opacity-30 dark:hover:bg-opacity-30 p-1"
             type="button"
+            :aria-label="switchThemeAriaLabel"
             @click="toggleColorMode"
           >
             <template v-if="$colorMode.value === 'dark'">
