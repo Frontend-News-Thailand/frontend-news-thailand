@@ -24,6 +24,7 @@
     "@types/glob": "^8.1.0",
     "@types/node": "^18.16.19",
     "eslint": "^8.57.0",
+    "eslint-plugin-tailwindcss": "^3.14.3",
     "lint-staged": "^13.2.3",
     "nuxt": "^3.10.2",
     "nuxt-gtag": "^0.5.7",

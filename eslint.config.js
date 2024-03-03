@@ -1,7 +1,18 @@
 import antfu from '@antfu/eslint-config'
+import { FlatCompat } from '@eslint/eslintrc'
 
-export default antfu({
-  rules: {
-    'node/prefer-global/process': ['error', 'always'],
+const compat = new FlatCompat()
+
+export default antfu(
+  {
+    rules: {
+      'node/prefer-global/process': ['error', 'always'],
+    },
   },
-})
+  ...compat.config({
+    extends: ['plugin:tailwindcss/recommended'],
+    rules: {
+      'tailwindcss/no-custom-classname': 'off',
+    },
+  }),
+)
