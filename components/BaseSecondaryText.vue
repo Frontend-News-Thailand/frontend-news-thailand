@@ -1,5 +1,5 @@
 <template>
-  <span class="text-light-base-text dark:text-white text-opacity-40 dark:text-opacity-40 text-[0.625rem]">
+  <span class="text-light-base-text text-[0.625rem] text-opacity-40 dark:text-white dark:text-opacity-40">
     <slot />
   </span>
 </template>

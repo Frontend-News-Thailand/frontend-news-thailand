@@ -13,17 +13,17 @@ function sortCreatedAtArticles(articles: any[]) {
 
 <template>
   <div class="container mx-auto max-w-3xl pt-6">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
       <ContentList v-slot="{ list }" path="/news">
         <NuxtLink
           v-for="(article, index) in sortCreatedAtArticles(list)"
           :key="article._path"
-          class="flex flex-col first:md:flex-row first:md:col-span-2 gap-6 p-4 cursor-pointer group"
+          class="group flex cursor-pointer flex-col gap-6 p-4 first:md:col-span-2 first:md:flex-row"
           :to="article._path"
         >
           <nuxt-img
             :src="article.coverImage"
-            class="rounded-xl cover-image--primary-shadow"
+            class="cover-image--primary-shadow rounded-xl"
             width="640"
             height="480"
             fit="inside"

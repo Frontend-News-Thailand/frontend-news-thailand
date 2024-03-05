@@ -19,7 +19,7 @@
 }
 
 .nuxt-content hr {
-  @apply my-6;
+  @apply my-6 border-light-base-text/40 dark:border-dark-base-text/40;
 }
 
 .nuxt-content img {

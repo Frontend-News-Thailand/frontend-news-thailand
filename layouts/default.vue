@@ -13,16 +13,16 @@ function toggleColorMode() {
 
 <template>
   <div class="text-light-base-text dark:text-dark-base-text leading-[1.6]" :style="{ fontFamily: `'Sarabun', serif` }">
-    <div class="px-4 py-2 relative flex justify-center">
-      <NuxtLink to="/" class="w-[7em] md:w-[10em] inline-block" aria-current-value="Go to Home">
-        <AppLogo class="w-[7em] md:w-[10em] h-auto" />
+    <div class="relative flex justify-center px-4 py-2">
+      <NuxtLink to="/" class="inline-block w-[7em] md:w-[10em]" aria-current-value="Go to Home">
+        <AppLogo class="h-auto w-[7em] md:w-[10em]" />
       </NuxtLink>
 
-      <div class="flex gap-4 absolute right-4 md:right-12 top-1/2 transform -translate-y-1/2">
+      <div class="absolute right-4 top-1/2 flex -translate-y-1/2 gap-4 md:right-12">
         <NuxtLink
           to="https://github.com/Frontend-News-Thailand/frontend-news-thailand"
           target="_blank"
-          class="flex h-8 dark:hover:bg-white hover:bg-dark-base-bg transition-colors rounded-full hover:bg-opacity-30 dark:hover:bg-opacity-30 p-1"
+          class="hover:bg-dark-base-bg/30 flex h-8 rounded-full p-1 transition-colors dark:hover:bg-white/30"
           aria-current-value="Go to Github"
         >
           <Icon name="mdi:github" size="24px" />
@@ -30,7 +30,7 @@ function toggleColorMode() {
 
         <ClientOnly>
           <button
-            class="flex h-8 dark:hover:bg-white hover:bg-dark-base-bg transition-colors rounded-full hover:bg-opacity-30 dark:hover:bg-opacity-30 p-1"
+            class="hover:bg-dark-base-bg/30 flex h-8 rounded-full p-1 transition-colors dark:hover:bg-white/30"
             type="button"
             :aria-label="switchThemeAriaLabel"
             @click="toggleColorMode"

@@ -7,11 +7,11 @@ function splitDocTags(tags: string) {
 </script>
 
 <template>
-  <div class="flex gap-x-4 gap-y-2 flex-wrap">
+  <div class="flex flex-wrap gap-x-4 gap-y-2">
     <span
       v-for="(tag, index) of splitDocTags(props.tags)"
       :key="tag + index"
-      class="flex hover:underline decoration-primary cursor-pointer"
+      class="decoration-primary flex cursor-pointer hover:underline"
     >
       <span class="text-primary">#</span>
       <span>{{ tag }}</span>
